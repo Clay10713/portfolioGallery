@@ -1,0 +1,63 @@
+<!-- Sorting gallery of my porfolio with the ability to sort by categories of work. Rearranged the composition of the thumnails through JavaScript. Clicking on thumbnails activates the lightbox overlay. -->
+<!DOCTYPE HTML>
+<html>
+	<head>
+		<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+		<title>Sortable Portfolio Gallery</title>
+        <meta id="viewport" name= "viewport" content="width=device-width, maximum-scale=1.0, minimum-scale=1.0, initial-scale=1.0"/> <!--The media queries will know that the view port is not being scaled and then it will actually check the width of the acutal screen. Give us the abilty to change our design based on the size of the user's screen. -->
+    <link rel="stylesheet" type="text/css" href="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.css" />
+    <link rel="stylesheet" type="text/css" href="includes/sortable_gallery.css" />
+    
+    
+    <!-- [if it displays on IE 9]>
+        <script src="http://html5shiv.googlecode.com/svn/trunk/html5.js">
+        <link rel="stylesheet" type="text/css" href="includes/sortable_gallery_ie.css" />
+    <![endif]-->
+	</head>
+	<body>
+        
+        <!--<img src ="images/background.jpg" class="background"/> -->
+        
+        <div class= "title"></div>
+        
+        <div class="gallery">
+            <div class="sorting">
+                <div>
+                    <span>Filter portfolio by</span>
+                    <a class="sortLink selected" data-keyword="all" href="#">All</a>
+                    <a class="sortLink" data-keyword="development" href="#">Web Development</a>
+                    <a class="sortLink" data-keyword="applications" href="#">Web App</a>
+                    <a class="sortLink" data-keyword="e-commerce" href="#">E-Commerce Stores</a>
+                    <a class="sortLink" data-keyword="github" href="">GitHub Repositories</a>
+                    <div class="clear_both"></div>
+                </div>
+            </div>
+            <div class="photos">
+                
+                <div class="thumbnail_container">
+                
+                    <a class ="thumbnail" title="Developed and designed houstontravelandcruise.com for a travel agency utilizing HTML, CSS, Javascript and jQuery. The backup url is htc.claytonorobio.com." href="photos/WB.JPG" data-keyword="development"><img src="images/images/Houston-Travel.jpg"/></a>
+                    <a class ="thumbnail" title="Developed a web browser to-do list application utilizing HTML, CSS, and Javascript." href="photos/TodoList.JPG" data-keyword="applications"><img src="images/images/TodoList.jpg"/></a>
+                    <a class ="thumbnail" title="Searches through JSON data file and was created with JavaScript, jQuery, and CSS transitions without having to reload the page." href="photos/Ajax.JPG" data-keyword="applications development"><img src="images/images/AJAXx75.jpg"/></a>
+                    <a class ="thumbnail" title="Smackdown JavaScript Carousel that cycles through the current roster. Rotates every 5 seconds, unless the mouse hovers over the text." href="photos/JSON.JPG" data-keyword="applications development"><img src="images/images/JSONx75.jpg"/></a>
+                    <a class ="thumbnail" title="Developed an e-commerce demo site to display my capabilities and improve upon SEO and google adwords." href="photos/Store1.jpg" data-keyword="development e-commerce"><img src="images/images/Store1.jpg"/></a>
+                    <a class ="thumbnail" title="Developed a prototype update of houstoncraneinc.com" href="photos/HoustonCranepic.jpg" data-keyword="development"><img src="images/images/HoustonCranepic.jpg"/></a>
+                    <a class ="thumbnail" title="Contributed in creating the University of Houston AITP chapter website utilizing WordPress, HTML and CSS." href="photos/uhdaitpportfolio.jpg" data-keyword="development"><img src="images/images/uhdaitpportfolio.jpg"/></a>
+                    <a class ="thumbnail" title="Where I display my github code from projects" href="photos/Github1.PNG" data-keyword="github"><img src="images/images/Github1.jpg"/></a>
+                
+                </div> 
+                    
+                
+            </div>
+        </div>
+        <!-- Removing the debug size and remainder
+        <div class="debug-size" style="position:absolute; bottom:0px; left:5px;">debug size</div>
+        <div class="debug-remainder" style="position:absolute; bottom:25px; left:5px;">debug remainder</div>
+		
+		 -->
+        <script type="text/javascript" src="includes/jquery-1.7.1.min.js"></script>
+        <script type="text/javascript" src="includes/jquery.fancybox-1.3.4/fancybox/jquery.fancybox-1.3.4.js"></script>
+        <script type="text/javascript" src="includes/sortable_gallery.js"></script>
+        
+	</body>
+</html>
